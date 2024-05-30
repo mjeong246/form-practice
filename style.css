@@ -52,7 +52,6 @@ body {
     justify-content: center;
     padding-left: var(--leftpadding);
     flex-grow: 1;
-    border: solid;
 }
 
 .entryWrapper {
@@ -70,7 +69,8 @@ form {
 
 .formWrapper {
     padding-left: var(--leftpadding);
-    border: solid;
+    padding-bottom: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .formcol {
@@ -91,8 +91,43 @@ form {
 button {
     margin-top: 32px;
     margin-left: var(--leftpadding);
+    background-color: #596D48;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
 .logInText {
     margin-top: 32px;
+}
+
+text {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-right: 64px;
+}
+
+.letdothis {
+    padding-top: 32px;
+}
+
+label {
+    font-family: monospace;
+}
+
+input {
+    border: solid;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)  
 }
