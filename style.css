@@ -1,12 +1,16 @@
 
-
+@font-face {
+    font-family: norse-bold;
+    src: url(assets/Norse-Bold.otf);
+}
 
 body {
     --leafheight: 100vh;
     --leafwidth: calc(var(--leafheight)*0.64);
+    --leftpadding: 64px;
+
     display: flex;
     margin: 0px;
-
 }
 
 .leafpic {
@@ -19,10 +23,13 @@ body {
     width: auto;
 }
 
-text {
+.odinBarText {
     color: white;
-    font-size: 32px;
+    font-family: norse-bold;
+    font-size: 64px;
 }
+
+
 .banner {
     --bannerheight: calc(var(--leafheight)*0.2);
     left: 0px;
@@ -38,15 +45,54 @@ text {
 
     background-color: rgba(0, 0, 0, 0.5);
 }
-/* 
-.banner:after {
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-} */
 
-
-rightbar {
+.rightbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: var(--leftpadding);
     flex-grow: 1;
     border: solid;
+}
+
+.entryWrapper {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-right: 20vw;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-left: calc(var(--leftpadding)*-1);
+}
+
+.formWrapper {
+    padding-left: var(--leftpadding);
+    border: solid;
+}
+
+.formcol {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 200px;
+    gap: 16px;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+button {
+    margin-top: 32px;
+    margin-left: var(--leftpadding);
+}
+
+.logInText {
+    margin-top: 32px;
 }
