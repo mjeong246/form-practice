@@ -1,0 +1,52 @@
+
+
+
+body {
+    --leafheight: 100vh;
+    --leafwidth: calc(var(--leafheight)*0.64);
+    display: flex;
+    margin: 0px;
+
+}
+
+.leafpic {
+    height: var(--leafheight);
+    width: var(--leafwidth);
+}
+
+.logo {
+    height: calc(var(--bannerheight)*0.9);
+    width: auto;
+}
+
+text {
+    color: white;
+    font-size: 32px;
+}
+.banner {
+    --bannerheight: calc(var(--leafheight)*0.2);
+    left: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: calc(var(--leafwidth));
+    height: var(--bannerheight);
+    top: calc(var(--leafheight)*0.2);
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 
+.banner:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+} */
+
+
+rightbar {
+    flex-grow: 1;
+    border: solid;
+}
